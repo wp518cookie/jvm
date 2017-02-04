@@ -5,8 +5,9 @@ package chap2;
  */
 public class StringIntern {
     public static void main(String[] args) {
-        String str2 = new StringBuilder("he").append("llo").toString();
-        String str1 = new String("hello");
-        System.out.println(str2 == str2.intern());
+        String s1 = "aaaa";
+        String s2 = new String("aaaa");
+        String s3 = s2.intern();
+        System.out.println(s1 == s3);
     }
 }
